@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><title>Catalog</title>
+
+    <body>
+    <form action="/reg" method="POST" id="regForm">
+    <lable id="title">Регистрация</lable>
+    <table>
+      <tboby>
+        <tr>
+          <td class="lbl">Имя:</td>
+          <td><input type="text" name="name" id="name" class="textbox"/>
+        </tr>
+        <tr>
+          <td></td>
+          <td><lable class="help">Максимум 25 символов</lable></td>
+        </tr>
+        <tr>
+          <td class="lbl">E-mail:</td>
+          <td><input type="text" name="mail" id="mail" class="textbox"/>
+        </tr>
+        <tr>
+          <td></td>
+          <td><lable class="help">Только @mail.ru</lable></td>
+        </tr>
+        <tr>
+          <td class="lbl">Пароль:</td>
+          <td><input type="password" name="password1" id="password1" class="textbox"/>
+        </tr>
+        <tr>
+          <td></td>
+          <td><lable class="help">От 5 до 10 символов</lable></td>
+        </tr>
+        <tr>
+          <td class="lbl">Подтвердить:</td>
+          <td><input type="password" name="password2" id="password2" class="textbox"/>
+        </tr>
+        <tr>
+          <td></td>
+          <td><lable class="help">Должен совпадать с паролем</lable></td>
+        </tr>
+        <tr>
+          <td class="lbl">Информация:</td>
+          <td><textarea maxlength="250" name="info" id="info" class="textbox"></textarea>
+        </tr>
+        <tr>
+          <td></td>
+          <td><lable class="help">В свободной форме, максисум 250 символов</lable></td>
+        </tr>
+      </tbody>
+    </table>
+    <input type="button" id="send" value="Отправить заявку"/>
+  </form>
+  </body>
